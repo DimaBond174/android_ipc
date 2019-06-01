@@ -1,0 +1,26 @@
+<resources>
+    <string name="app_name">android_ipc</string>
+    <string name="action_settings">Settings</string>
+    <string name="strUiMainFrag">IPC speed tester</string>
+    <string name="strUiMainFragM">Home screen</string>
+    <string name="strCaseCaption">Test case:</string>
+    <string name="strResultCaption">Test results:</string>
+    <string name="strResult_nothing">The test was not conducted yet..</string>
+    <string name="strTest_try_start">Trying to start test..</string>
+    <string name="strTest_try_stop">Trying to STOP test..</string>
+    <string name="strConfig_error">Error while parsing JSON to config..</string>
+    <string name="strTestCase_fail">Fail to start test case..</string>
+    <string name="strFileNotExist">File not exists: </string>
+    <string name="strUiHistoryFrag">Tests history</string>
+    <string name="strHistorySaveFail">Fail to save test history. Please check disk space.</string>
+    <string name="strNoHistory">No tests history..</string>
+    <string name="strUiSettingsFrag">Settings</string>
+    <string name="strClearHistory">Clear history</string>
+    <string name="strDefSettings">Set all default</string>
+    <string name="strSelectAFile">Select a file</string>
+    <string name="strFileName">File name: </string>
+    <string name="strAllTesters">All testers </string>
+    <string name="strSelectedTesters">Selected testers </string>
+    <string name="strExit">Exit</string>
+    <string name="strERRNoTesters">All the testers selected are single-threaded. Please add testers.</string>
+</resources>
