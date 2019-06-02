@@ -317,6 +317,34 @@ public class FileAdapter {
     saveFile(sb.toString(),  text);
   }
 
+  public static void saveFileBytes(String file, byte[] data, Context context)  {
+    StringBuilder sb  = new StringBuilder(256);
+    sb.append(context.getFilesDir().getPath())
+        .append("/specnet/").append(file);
+    String filePath = sb.toString();
+    try {
+      if (enshurePath(filePath)) {
+        File f = new File(filePath);
+        if (f.exists()) {
+          f.delete();
+        }
+        f.createNewFile();
+        if (f.getFreeSpace() > LoLevel) {
+          FileOutputStream fOut = new FileOutputStream(f);
+          fOut.write(data);
+          fOut.flush();
+          fOut.close();
+        } else {
+//          if (null!=callback){
+//            callback.onDiskFull();
+//          }
+        }
+      }
+    } catch (Exception e) {
+      Log.e(TAG,"saveFile err:"+filePath,e);
+    }
+  }
+
   public static void saveFile(String filePath, String text)  {
     try {
       if (enshurePath(filePath)) {

@@ -120,7 +120,6 @@ public class TestContentProvider  implements ITester  {
         intent.putExtra(StaticConsts.PARM_1tester, ContentPullService.TESTER_TestContentProvider);
         intent.putExtra(StaticConsts.PARM_byte_data, curCase.get_string_param_val(null));
         intent.putExtra(StaticConsts.PARM_check, curCase.get_bool_param_val(null));
-        intent.putExtra(StaticConsts.PARM_check, curCase.get_bool_param_val(null));
 
         intent.setFlags(Intent.FLAG_GRANT_READ_URI_PERMISSION);
         Uri uri = FileAdapter.create_export_Uri(

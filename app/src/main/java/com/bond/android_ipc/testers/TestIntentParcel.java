@@ -1,9 +1,6 @@
 package com.bond.android_ipc.testers;
 
-import android.content.ClipData;
-import android.content.ClipDescription;
 import android.content.Intent;
-import android.net.Uri;
 import android.util.Log;
 
 import com.bond.android_ipc.TestPresenter;
@@ -18,7 +15,7 @@ import java.util.ArrayList;
 import java.util.concurrent.CompletableFuture;
 import java.util.concurrent.TimeUnit;
 
-public class TestViaDisk implements ITester  {
+public class TestIntentParcel implements ITester  {
 
   @Override
   public CompletableFuture<long[]> start(ITestCase testCase) {
@@ -57,7 +54,7 @@ public class TestViaDisk implements ITester  {
 
   // Private
   ////////////////////////////////////////////////////////////
-  final String TAG = "Java.ViaDisk";
+  final String TAG = "Java.IntentParcel";
   volatile int  startID  =  0;
   volatile Thread thread  =  null;
   volatile LocalThread local  =  null;
